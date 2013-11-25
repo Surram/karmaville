@@ -21,7 +21,7 @@
     <% 3.times do |i|%>
       <% new_page_num = @page_num - 3 + i %>
       <% if new_page_num < 1 %>
-        <% break %>
+        <% next %>
       <% end %>
       <li><a href="/<%= new_page_num %>"><%= new_page_num %></a></li>
     <% end %>
